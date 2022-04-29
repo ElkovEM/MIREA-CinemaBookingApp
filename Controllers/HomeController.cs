@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
+/*
+ * Файл контроллера, отвечающего за переходы между страницами
+ */
 namespace CinemaBookingApp.Controllers
 {
     public class HomeController : Controller
@@ -15,12 +18,12 @@ namespace CinemaBookingApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(); // Показывает клиенту страницу Index.cshtml
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return View();  // Показывает клиенту страницу Privacy.cshtml
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

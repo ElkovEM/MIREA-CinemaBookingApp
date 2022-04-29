@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Добавляем MVC сервисы
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -20,6 +20,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Устанавливаем сопоставление маршрутов с контроллерами
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
