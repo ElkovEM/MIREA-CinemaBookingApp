@@ -21,9 +21,14 @@ namespace CinemaBookingApp.Controllers
             return View(); // Показывает клиенту страницу Index.cshtml
         }
 
-        public IActionResult Privacy()
+        public IActionResult CinemaList()
         {
-            return View();  // Показывает клиенту страницу Privacy.cshtml
+            return View();  // Показывает клиенту страницу CinemaList.cshtml
+        }
+        
+        public IActionResult Avengers()
+        {
+            return View();  // Показывает клиенту страницу Avengers.cshtml
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
